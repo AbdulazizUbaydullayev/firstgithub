@@ -4,3 +4,36 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+.main{
+    width: 500px;
+    height: 400px;
+    border: 1px solid red;
+    position: relative;
+    overflow: hidden;
+}
+.h1{
+    margin-left: 20px;
+    position: absolute;
+    z-index: 11;
+}
+.h3{
+    color: grey;
+    margin-left: 20px;
+    margin-top: 30px;
+    position: absolute;
+    z-index: 11;
+}
+.rrr{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    border-bottom-left-radius: 100px;
+    z-index: 10;
+    transition: .5s;
+}
+.main:hover .rrr{
+    transform: scale(20);
+}
